@@ -1,30 +1,177 @@
-
-:root{
-  --infera-blue:#1a3b5d;
-  --bg:#ffffff;
-  --muted:#6b7280;
+:root {
+  --infera-blue: #1a3b5d;
+  --bg: #ffffff;
+  --muted: #6b7280;
 }
-*{box-sizing:border-box}
-body{font-family:Arial,Helvetica,sans-serif;margin:0;background:var(--bg);color:#111;}
-.site-header{padding:30px 20px;text-align:center;border-bottom:1px solid #e6e9ee;}
-.logo{max-width:160px;height:auto;display:block;margin:0 auto;}
-.tagline{margin:10px 0 0;color:var(--infera-blue);font-weight:600;}
-.main-nav{margin-top:14px;display:flex;justify-content:center;gap:18px;flex-wrap:wrap;}
-.main-nav a{text-decoration:none;color:var(--infera-blue);font-weight:600;padding:8px 12px;border-radius:6px;}
-.main-nav a:hover{background:#f0f6fb;}
-.container{max-width:1000px;margin:30px auto;padding:0 20px;}
-.hero{display:flex;gap:30px;align-items:center;justify-content:center;flex-direction:column;text-align:center;padding:40px 20px;}
-.hero h1{color:var(--infera-blue);margin:0;font-size:32px;}
-.hero p{color:var(--muted);max-width:760px;}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:20px;}
-.card{border:1px solid #eef2f6;padding:18px;border-radius:8px;background:#fff;}
-.card img{width:100%;height:140px;object-fit:cover;border-radius:6px;margin-bottom:10px;}
-.card h3{margin:6px 0;color:var(--infera-blue);}
-.footer{background:#f8fafc;padding:18px;text-align:center;color:var(--muted);margin-top:40px;border-top:1px solid #eef2f6;}
-.module-list{list-style:none;padding:0}
-.module-list li{padding:8px 0;border-bottom:1px dashed #eef2f6}
-.small{color:var(--muted);font-size:14px}
-@media(min-width:800px){
-  .hero{padding:60px 20px}
-  .hero h1{font-size:40px}
+
+* {
+  box-sizing: border-box;
+}
+
+/* ======== Estilos generales del cuerpo ======== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  color: #111;
+  position: relative;
+  z-index: 0;
+}
+
+/* ======== Fondo con el logo de INFERA ======== */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/INFERA.jpeg"); /* Logo de fondo */
+  background-size: contain;        /* El logo se ve completo */
+  background-position: center;     /* Centrado en la pantalla */
+  background-repeat: no-repeat;    /* No se repite */
+  opacity: 0.15;                   /* Transparencia (ajustable) */
+  z-index: -1;                     /* Envía detrás del contenido */
+}
+
+/* ======== Encabezado ======== */
+.site-header {
+  padding: 30px 20px;
+  text-align: center;
+  border-bottom: 1px solid #e6e9ee;
+}
+
+.logo {
+  max-width: 160px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.tagline {
+  margin: 10px 0 0;
+  color: var(--infera-blue);
+  font-weight: 600;
+}
+
+/* ======== Navegación principal ======== */
+.main-nav {
+  margin-top: 14px;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: var(--infera-blue);
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.main-nav a:hover {
+  background: #f0f6fb;
+}
+
+/* ======== Contenedor general ======== */
+.container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* ======== Sección principal (hero) ======== */
+.hero {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero h1 {
+  color: var(--infera-blue);
+  margin: 0;
+  font-size: 32px;
+}
+
+.hero p {
+  color: var(--muted);
+  max-width: 760px;
+}
+
+/* ======== Tarjetas / servicios ======== */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.card {
+  border: 1px solid #eef2f6;
+  padding: 18px;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  margin: 6px 0;
+  color: var(--infera-blue);
+}
+
+/* ======== Pie de página ======== */
+.footer {
+  background: #f8fafc;
+  padding: 18px;
+  text-align: center;
+  color: var(--muted);
+  margin-top: 40px;
+  border-top: 1px solid #eef2f6;
+}
+
+/* ======== Listas y texto pequeño ======== */
+.module-list {
+  list-style: none;
+  padding: 0;
+}
+
+.module-list li {
+  padding: 8px 0;
+  border-bottom: 1px dashed #eef2f6;
+}
+
+.small {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* ======== Adaptación a pantallas grandes ======== */
+@media (min-width: 800px) {
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+}
+
+/* ======== Ajuste para móviles ======== */
+@media (max-width: 600px) {
+  body::before {
+    background-size: 80%;  /* Reduce tamaño del logo en pantallas pequeñas */
+    opacity: 0.12;         /* Un poco más tenue en móviles */
+  }
 }

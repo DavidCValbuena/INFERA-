@@ -14,7 +14,7 @@ body {
   color: #111;
 
   /* Fondo sin difuminado */
-  background: url('images/INFERA.jpeg') no-repeat center center / cover;
+  background: url('../images/INFERA.jpeg') no-repeat center center / cover;
   background-attachment: fixed;
 }
 

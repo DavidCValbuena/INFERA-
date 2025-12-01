@@ -228,3 +228,28 @@ body {
 
 
 
+
+
+.video-container {
+  position: relative;
+  width: 100%;          /* ocupa todo el ancho disponible */
+  max-width: 900px;     /* tamaño máximo del video */
+  margin: 40px auto;    /* centra el contenedor */
+  padding-bottom: 56.25%; /* relación 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;   /* opcional - esquinas redondeadas */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25); /* opcional - sombra */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;   /* usa todo el contenedor */
+  height: 100%;
+}
+
+
+
+

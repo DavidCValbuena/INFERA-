@@ -170,7 +170,7 @@ body {
 .img-modulo-grande {
   width: 100%;
   height: auto !important;            /* Mantiene la imagen completa */
-  max-height: 500px;                  /* Ajusta si deseas más alto */
+  max-height: 1000px;                  /* Ajusta si deseas más alto */
   object-fit: contain !important;     /* Evita recorte */
   border-radius: 10px;
   display: block;

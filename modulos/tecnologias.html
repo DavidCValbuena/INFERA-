@@ -32,6 +32,35 @@
     <p class="small">Contenido adicional sobre Digital Factory.</p>
   </div>
 
+<h1>Implementación en NX de un sistema de estación de corte</h1>
+    <p>Se desarrolló un sistema de automatización para una estación de corte de materia prima utilizando Digital Factory en NX. El proyecto integra tres plataformas principales:</p>
+
+      <ol>
+          <li>Studio 5000: Donde se programa la lógica de control del sistema          </li>
+          <li>Ignition: Servidor intermedio que conecta Studio 5000 con NX mediante protocolos OPC DA y OPC UA </li>
+         <li>NX (Siemens): Donde se simula y visualiza la estación de trabajo</li>
+      </ol>
+       
+    <p>Componentes de la estación</p>
+
+    <ul>
+
+        <li>Dos bandas transportadoras (entrada y salida)</li>
+
+        <li>Sistema de corte con disco y eje Z</li>
+
+        <li>Dos prensas/mordazas para fijar el material</li>
+
+        <li>Cuatro sensores (tres para longitudes de corte y uno para detección de salida)</li>
+        
+    </ul>
+
+    
+
+    <p>Las barras de 3 metros entran por la banda transportadora, se detectan mediante sensores que determinan la longitud de corte deseada, se fijan con prensas, se cortan con el disco, y finalmente el material cortado sale por la banda de salida. El sistema permite seleccionar diferentes longitudes de corte preprogramadas y cuenta con funciones de arranque, parada y parada de emergencia. Las piezas cortadas serán posteriormente mecanizadas para fabricar componentes de motorreductores.</p>
+
+
+   
 
     <!--  VIDEO DIGITAL FACTORY NX - APM 2025-2 -->
    

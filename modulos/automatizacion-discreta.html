@@ -47,8 +47,27 @@
   </div>
 
 
-     
-        
+<h1>Integración SCADA con NX mediante Ignition en la Nube</h1>
+
+    <p>Se desarrolló la conexión del sistema SCADA con NX utilizando un servidor alojado en Azure (Chile) con un contenedor de Ignition versión 8.3.1, accesible mediante IP en el puerto 8088.</p>
+   
+    <h3>Arquitectura del Sistema:</h3>
+    <p>Se instalaron tres módulos clave: MQTT Distributor, MQTT Engine y MQTT Transmission (todos en estado connected), que permiten la conexión con un Ignition local que se comunica con NX mediante protocolo OPC UA.</p>
+
+
+    <h3>Interfaz HMI Desarrollada:</h3>
+   
+    <p>Utilizando Ignition Designer se creó una HMI para la cortadora de ejes con dos ventanas:</p>
+
+    <ul>
+    <li>Ventana Principal: Visualiza bandas transportadoras (entrada/salida), cortadora e indicadores con código de colores (rojo: apagado, verde: encendido) para sensores, mordazas, eje Z y disco de corte. Incluye botones de marcha, stop y tres opciones de longitud de corte.</li>
+    <li>Ventana de Históricos: Registra en tiempo real la posición de mordazas, velocidad del disco de corte y posición del eje Z.</li>
+    </ul>
+
+    <h3>Operación del Sistema:</h3>
+    <p>La demostración muestra el proceso completo: selección de longitud de corte, avance de la pieza por banda de entrada hasta activación de sensores, sujeción con mordazas, activación del disco y descenso del eje Z para corte, liberación de mordazas, transporte por banda de salida y recolección final en sumidero.</p>
+    <p>Beneficio: Integración en la nube que permite monitoreo y control remoto del proceso de corte con sincronización en tiempo real entre SCADA y simulación NX.</p>
+    
  <!--  VIDEO SCADA - APM 2025-2 -->
    
     <div class="video-container">

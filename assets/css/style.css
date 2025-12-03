@@ -11,7 +11,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
-  color: #111;
+  color: #1a3b5d;
 
   /* Fondo sin difuminado */
   background: url('../images/INFERA.jpeg') no-repeat center center / cover;
@@ -64,7 +64,7 @@ body {
 
 /* CONTENEDORES GENERALES */
 .container {
-  max-width: 2000px;
+  max-width: 1500px;
   margin: 30px auto;
   padding: 0 20px;
   background-color: rgba(255,255,255,0.85);

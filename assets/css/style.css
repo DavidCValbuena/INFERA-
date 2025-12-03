@@ -27,7 +27,7 @@ body {
 }
 
 .logo {
-  max-width: 500px;
+  max-width: 300px;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -64,7 +64,7 @@ body {
 
 /* CONTENEDORES GENERALES */
 .container {
-  max-width: 1500px;
+  max-width: 1000px;
   margin: 30px auto;
   padding: 0 20px;
   background-color: rgba(255,255,255,0.85);

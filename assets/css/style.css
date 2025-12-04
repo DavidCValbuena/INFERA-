@@ -257,5 +257,30 @@ body {
 }
 
 
+.tabla-csv {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(4px);
+}
+
+.tabla-csv th {
+  background: #1a3b5d;
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+
+.tabla-csv td {
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+}
+
+.tabla-csv tr:nth-child(even) {
+  background: rgba(0,0,0,0.05);
+}
+
+
 
 

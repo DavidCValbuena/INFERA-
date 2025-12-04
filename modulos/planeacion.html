@@ -38,43 +38,11 @@
                 class="img-modulo-grande" />
 
 
-
-      <img src="../images/cronograma.png" 
+       <img src="../images/cronogramaproyectolargo.png" 
                 class="img-modulo-grande" />
 
 
-<h2>Cronograma del Proyecto</h2>
-
-<table id="csvTable" class="tabla-csv"></table>
-
-<script>
-async function cargarCSV() {
-    // Ruta EXACTA al archivo CSV
-    const response = await fetch('../Cronograma del proyecto.csv');
-    const texto = await response.text();
-
-    const filas = texto.split('\n').map(f => f.split(','));
-
-    let html = '';
-    filas.forEach((fila, index) => {
-        html += '<tr>';
-        fila.forEach(col => {
-            if (index === 0) {
-                html += `<th>${col}</th>`;   // Primera fila = encabezado
-            } else {
-                html += `<td>${col}</td>`;
-            }
-        });
-        html += '</tr>';
-    });
-
-    document.getElementById('csvTable').innerHTML = html;
-}
-
-cargarCSV();
-</script>
-
-
+      
 
 
 
